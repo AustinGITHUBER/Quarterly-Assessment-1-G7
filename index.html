@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>My Favorite Song</title>
+    </head>
+    <body style='background-color: #333; color: white; font-size: 12px; text-align: center;'>
+        <noscript style='color: red;'>Enable Javascript</noscript>
+        <div style='font-size: 16px; color: #ccc;'><a href='https://www.youtube.com/watch?v=tWHBaJHo5og' target='_blank'>xo</a><sub> by <a href='https://www.youtube.com/channel/UC-ZsN5evqmSVo3_SJyQe9yA' target='_blank'>EDEN</a></sub><img src='https://cdn-icons-png.flaticon.com/512/0/375.png' alt='Play' id='play' style='cursor: pointer; color: lightgreen; border-radius: 50%;' width='16px' height='16px'></div>
+        <div>One, two, three<br>
+            <br>
+            Yeah, she's in love with the concept<br>
+            As if we're all just how she imagined<br>
+            'Cause we're in love but just don't know it yet<br>
+            Well, tell me how I'm supposed to see the magic<br>
+            <br>
+            'Cause I don't believe in it no more<br>
+            But I won't tell her<br>
+            'Cause I always imagined<br>
+            It's easier if she thinks she won<br>
+            So Imma' let her<br>
+            <br>
+            And she said<br>
+            "I don't think I love you no more."<br>
+            "You never seem to call me lately"<br>
+            Girl, I don't think you know me at all<br>
+            'Cause I never thought I'd have to say this<br>
+            <br>
+            No, I don't love you, and I never did<br>
+            Look at us burning down in flames for kicks<br>
+            But just know<br>
+            I'm not singing for your XO<br>
+            I'm just singing 'cause it's over, yeah<br>
+            (Uhh)<br>
+            <br>
+            Came and went like the summertime<br>
+            Is that a sunset or sunrise?<br>
+            Looking back like where'd the time go<br>
+            So much for trying to keep this moving slow<br>
+            'Cause I don't believe in her no more<br>
+            But I remember<br>
+            <br>
+            How we talked shit like we knew what we wanted, and<br>
+            I still remember what she said<br>
+            <br>
+            "I don't think I love you no more"<br>
+            "You never seem to call me lately"<br>
+            But I don't think she knew me at all<br>
+            'Cause I never thought I'd have to say this<br>
+            But I'm no liar<br>
+            And I never hid anything<br>
+            You should've seen it coming to this, just know<br>
+            I'm not singing for an EX though<br>
+            I'm just singing 'cause it's over<br>
+            <br>
+            Yeah, Yeah
+        </div>
+        <a href='https://www.google.com/search?q=xo+by+eden+lyrics' target='_blank' style='color: blue;'>Source</a>
+        <style>
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+        </style>
+        <script>
+            'use strict'
+            let play = document.querySelector('#play')
+            let stopped = 'https://cdn-icons-png.flaticon.com/512/0/375.png'
+            let playing = 'https://cdn-icons-png.flaticon.com/512/16/16427.png'
+            play.src = stopped
+            play.alt = 'Play'
+            let audio
+            play.onclick = () => {
+                if (audio === undefined) {
+                    audio = new Audio('https://docs.google.com/uc?export=open&id=1lawRDP2oM-qyuSrVYGhLm-UWZeooJlL9')
+                    audio.play()
+                    audio.loop = true
+                    play.src = playing
+                    play.alt = 'Stop'
+                    return
+                }
+                audio.pause()
+                audio.remove()
+                audio = undefined
+                play.src = stopped
+                play.alt = 'Play'
+            }
+        </script>
+    </body>
+</html>
